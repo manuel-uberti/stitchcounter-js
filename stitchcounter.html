@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stitchcounter</title>
+    <link href="http://thomasf.github.io/solarized-css/solarized-light.min.css" rel="stylesheet"></link>
+  </head>
+  <body>
+    <h1>Stitchcounter</h1>
+    <h5>A little tool to help you with knitting and crocheting</h6>
+      <p>This tool was inspired by the series &ldquo;Math for Knitters&rdquo; by <a href="https://www.youtube.com/user/verypinkknits">VeryPink</a>.</p>
+      <fieldset><legend><strong>Change gauge in a pattern</strong></legend>
+        <em>Pattern lists gauge and with, you want to knit the same width with a different gauge.</em>
+        <br><br><div style="color: #d33682" id="message"></div>
+        <table>
+          <tr>
+            <td>
+              <label for="orows">Number of rows/rounds as listed in pattern gauge:</label>
+            </td>
+            <td>
+              <input type="number" name="orows" id="orows" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="osts">Number of stitches as listed in pattern gauge: </label>
+            </td>
+            <td>
+              <input type="number" name="osts" id="osts" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="rows">Number of rows/rounds in gauge you want to use: </label>
+            </td>
+            <td>
+              <input type="number" name="rows" id="rows" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sts">Number of stitches in gauge you want to use: </label>
+            </td>
+            <td>
+              <input type="number" name="sts" id="sts" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ovalr">Total rows/rounds of pattern: </label>
+            </td>
+            <td>
+              <input type="number" name="ovalr" id="ovalr" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ovals">Stitches to CO for your project: </label>
+            </td>
+            <td>
+              <input type="number" name="ovals" id="ovals" required>
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <br>
+          <button id="button1">Calculate &rarr;</button>
+          <button id="clean1">Clean</button>
+          <br><br>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <label for="totalr">Total rows: </label>
+            </td>
+            <td>
+              <div id="totalr"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="totals">Total stitches: </label>
+            </td>
+            <td>
+              <div id="totals"></div>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <br><br>
+      <fieldset><legend><strong>Calculate number of stitches to CO</strong></legend>
+        <em>You have a given gauge, calculate how many stitches/rows you need to get a given dimension.</em>
+        <br><div id="message1"></div><br>
+        <table>
+          <tr>
+            <td>
+              <label for="units">Dimension of swatch [4 inches, 10 cms, etc.]: </label>
+            </td>
+            <td>
+              <input type="number" name="units" id="units" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="rows1">Rows/rounds in gauge: </label>
+            </td>
+            <td>
+              <input type="number" name="rows1" id="rows1" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="sts1">Stitches in gauge: </label>
+            </td>
+            <td>
+              <input type="number" name="sts1" id="sts1" required>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="cm">Cms/inches of your project: </label>
+            </td>
+            <td>
+              <input type="number" name="cm" id="cm" required>
+            </td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <br>
+          <button id="button2">Calculate &rarr;</button>
+          <button id="clean2">Clean</button>
+          <br><br>
+        </div>
+        <table>
+          <tr>
+            <td>
+              <label for="finalr">Final rows: </label>
+            </td>
+            <td>
+              <div id="finalr"></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="finals">Final stitches: </label>
+            </td>
+            <td>
+              <div id="finals"></div>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <script src="js/utilities.js"></script>
+      <script type="text/javascript" src="js/stitchcounter.js"></script>
+  </body>
+</html>
