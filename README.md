@@ -8,6 +8,10 @@ in [CHICKEN Scheme](https://github.com/manuel-uberti/stitchcounter-scm),
 CSS is [Solarized CSS](https://thomasf.github.io/solarized-css/) by Thomas
 Frössman.
 
+## Usage
+Head over to:
+[http://www.boccaperta.com/stitchcounter.html](http://www.boccaperta.com/stitchcounter.html)
+
 ## License
 Copyright © 2015 Manuel Uberti
 
