@@ -50,6 +50,38 @@ function calculate2() {
   return false;
 } // end of calculate2()
 
+function calculate3() {
+  'use strict';
+
+  var finaly;
+  var weightf = U.$('weightf').value;
+  var yardf = U.$('yardf').value;
+  var weightp = U.$('weightp').value;
+
+  finaly = (yardf * weightp) / weightf;
+  finaly = finaly.toFixed(2);
+
+  U.$('finaly').innerHTML = "<strong>" + finaly + "</strong>";
+
+  return false;
+} // end of calculate3()
+
+function calculate4() {
+  'use strict';
+
+  var totalshb;
+  var numbershb = U.$('numbershb').value;
+  var yardageshb = U.$('yardageshb').value;
+  var yardagesub = U.$('yardagesub').value;
+
+  totalshb = (numbershb * yardageshb) / yardagesub;
+  totalshb = totalshb.toFixed(2);
+
+  U.$('totalshb').innerHTML = "<strong>" + totalshb + "</strong>";
+
+  return false;
+} // end of calculate4()
+
 function clean1() {
   'use strict';
 
@@ -78,12 +110,38 @@ function clean2() {
   return false;
 } // end of clean2()
 
+function clean3() {
+  'use strict';
+
+  U.$('weightf').value = "";
+  U.$('yardf').value = "";
+  U.$('weightp').value = "";
+  U.$('finaly').innerHTML = "";
+
+  return false;
+} // end of clean3()
+
+function clean4() {
+  'use strict';
+
+  U.$('numbershb').value = "";
+  U.$('yardageshb').value = "";
+  U.$('yardagesub').value = "";
+  U.$('totalshb').innerHTML = "";
+
+  return false;
+} // end of clean4()
+
 function init () {
   'use strict';
   U.$('button1').onclick = calculate1;
   U.$('clean1').onclick = clean1;
   U.$('button2').onclick = calculate2;
   U.$('clean2').onclick = clean2;
+  U.$('button3').onclick = calculate3;
+  U.$('clean3').onclick = clean3;
+  U.$('button4').onclick = calculate4;
+  U.$('clean4').onclick = clean4;
 } // end of init()
 
 window.onload = init;

@@ -10,7 +10,7 @@
       <p>This tool was inspired by the series &ldquo;Math for Knitters&rdquo; by <a href="https://www.youtube.com/user/verypinkknits">VeryPink</a>.<br>Developed by <a href="https://github.com/manuel-uberti/stitchcounter-js">Manuel Uberti</a>.</p>
       <fieldset><legend><strong>Change gauge in a pattern</strong></legend>
         <em>Pattern lists gauge and width, you want to knit the same width with a different gauge.</em>
-        <br><br><div style="color: #d33682" id="message"></div>
+        <br><br>
         <table>
           <tr>
             <td><label for="orows">Number of rows/rounds as listed in pattern gauge:</label></td>
@@ -57,7 +57,7 @@
       <br><br>
       <fieldset><legend><strong>Calculate number of stitches to CO</strong></legend>
         <em>You have a given gauge, calculate how many stitches/rows you need to get a given dimension.</em>
-        <br><div id="message1"></div><br>
+        <br><br>
         <table>
           <tr>
             <td><label for="units">Dimension of swatch [4 inches, 10 cms, etc.]: </label></td>
@@ -90,6 +90,71 @@
           <tr>
             <td><label for="finals">Final stitches: </label></td>
             <td><div id="finals"></div></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend><strong>Calculate yardage/meter on a partial ball of yarn</strong></legend>
+        <em>You have a partial ball of leftover yarn, calculate the yardage of that partial ball.</em>
+        <br><br>
+        <table>
+          <tr>
+            <td><label for="weightf">Weight of full ball of yarn: </label></td>
+            <td><input type="number" name="weightf" id="weightf" required></td>
+          </tr>
+          <tr>
+            <td><label for="yardf">Yardage/meter of full ball of yarn: </label></td>
+            <td><input type="number" name="yardf" id="yardf" required></td>
+          </tr>
+          <tr>
+            <td><label for="weightp">Weight of your partial ball of yarn: </label></td>
+            <td><input type="number" name="weightp" id="weightp" required></td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <br>
+          <button id="button3">Calculate &rarr;</button>
+          <button id="clean3">Clean</button>
+          <br><br>
+        </div>
+        <table>
+          <tr>
+            <td><label for="finaly">Yardage/meter of your partial ball of yarn: </label></td>
+            <td><div id="finaly"></div></td>
+          </tr>
+        </table>
+      </fieldset>
+      <br><br>
+      <fieldset>
+        <legend><strong>Substituting similar yarns</strong></legend>
+        <em>Pattern calls for a certain amount of a specific yarn,
+          you want to know how much of a different yarn you will need for substitution.</em>
+        <br><br>
+        <table>
+          <tr>
+            <td><label for="numbershb">Number of skeins/hanks/balls of yarn required by the pattern: </label></td>
+            <td><input type="number" name="numbershb" id="numbershb" required></td>
+          </tr>
+          <tr>
+            <td><label for="yardageshb">Yardage/meter of one skein/hank/ball of yarn required by the pattern: </label></td>
+            <td><input type="number" name="yardageshb" id="yardageshb" required></td>
+          </tr>
+          <tr>
+            <td><label for="yardagesub">Yardage/meter of one skein/hank/ball of substituting yarn: </label></td>
+            <td><input type="number" name="yardagesub" id="yardagesub" required></td>
+          </tr>
+        </table>
+        <div style="text-align:center;">
+          <br>
+          <button id="button4">Calculate &rarr;</button>
+          <button id="clean4">Clean</button>
+          <br><br>
+        </div>
+        <table>
+          <tr>
+            <td><label for="totalshb">Total skein/hank/ball of substituting yarn needed: </label></td>
+            <td><div id="totalshb"></div></td>
           </tr>
         </table>
       </fieldset>
