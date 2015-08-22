@@ -35,10 +35,3 @@ var U = {
     }
   }
 };
-
-function isNonEmptyNumber (str) {
-  'use strict';
-  if(!str.length) return false;
-  var num = +str;
-  return isFinite(num) && !isNaN(num);
-}
