@@ -1,3 +1,11 @@
+var U = {
+  $: function(id) {
+    'use strict';
+    if (typeof id == 'string') {
+      return document.getElementById(id);
+    }
+  }};
+
 function calculate1() {
   'use strict';
 
