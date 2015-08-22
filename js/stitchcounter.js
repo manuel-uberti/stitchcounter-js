@@ -13,8 +13,14 @@ function calculate1() {
   var orows = U.$('orows').value;
   var rows = U.$('rows').value;
   var ovalr = U.$('ovalr').value;
+  U.$('message1').innerHTML = "";
 
-  // TODO: validazione!
+  if ( (orows == null || orows == "") ||
+       (rows == null || rows == "") ||
+       (ovalr == null || ovalr == "") ) {
+    U.$('message1').innerHTML = "Please complete all the fields!";
+    return false;
+  }
 
   totalRows = (rows * ovalr) / orows;
   totalRows = totalRows.toFixed(2);
@@ -31,8 +37,14 @@ function calculate1b() {
   var osts = U.$('osts').value;
   var sts = U.$('sts').value;
   var ovals = U.$('ovals').value;
+  U.$('message1b').innerHTML = "";
 
-  // TODO: validazione!
+  if ( (osts == null || osts == "") ||
+       (sts == null || sts == "") ||
+       (ovals == null || ovals == "") ) {
+    U.$('message1b').innerHTML = "Please complete all the fields!";
+    return false;
+  }
 
   totalSts = (sts * ovals) / osts;
   totalSts = totalSts.toFixed(2);
@@ -49,6 +61,14 @@ function calculate2() {
   var units = U.$('units').value;
   var sts = U.$('sts1').value;
   var cm = U.$('cm').value;
+  U.$('message2').innerHTML = "";
+
+  if ( (units == null || units == "") ||
+       (sts == null || sts == "") ||
+       (cm == null || cm == "") ) {
+    U.$('message2').innerHTML = "Please complete all the fields!";
+    return false;
+  }
 
   finalSts = (sts / units) * cm;
   finalSts = finalSts.toFixed(2);
@@ -65,6 +85,14 @@ function calculate3() {
   var weightf = U.$('weightf').value;
   var yardf = U.$('yardf').value;
   var weightp = U.$('weightp').value;
+  U.$('message3').innerHTML = "";
+
+  if ( (weightf == null || weightf == "") ||
+       (yardf == null || yardf == "") ||
+       (weightp == null || weightp == "") ) {
+    U.$('message3').innerHTML = "Please complete all the fields!";
+    return false;
+  }
 
   finaly = (yardf * weightp) / weightf;
   finaly = finaly.toFixed(2);
@@ -81,6 +109,14 @@ function calculate4() {
   var numbershb = U.$('numbershb').value;
   var yardageshb = U.$('yardageshb').value;
   var yardagesub = U.$('yardagesub').value;
+  U.$('message4').innerHTML = "";
+
+  if ( (numbershb == null || numbershb == "") ||
+       (yardageshb == null || yardageshb == "") ||
+       (yardagesub == null || yardagesub == "") ) {
+    U.$('message4').innerHTML = "Please complete all the fields!";
+    return false;
+  }
 
   totalshb = (numbershb * yardageshb) / yardagesub;
   totalshb = totalshb.toFixed(2);
@@ -97,6 +133,7 @@ function clean1() {
   U.$('rows').value = "";
   U.$('ovalr').value = "";
   U.$('totalr').innerHTML = "";
+  U.$('message1').innerHTML = "";
 
   return false;
 } // end of clean1()
@@ -108,9 +145,10 @@ function clean1b() {
   U.$('sts').value = "";
   U.$('ovals').value = "";
   U.$('totals').innerHTML = "";
+  U.$('message1b').innerHTML = "";
 
   return false;
-} // end of clean1()
+} // end of clean1b()
 
 function clean2() {
   'use strict';
@@ -119,6 +157,7 @@ function clean2() {
   U.$('sts1').value = "";
   U.$('cm').value = "";
   U.$('finals').innerHTML = "";
+  U.$('message2').innerHTML = "";
 
   return false;
 } // end of clean2()
@@ -130,6 +169,7 @@ function clean3() {
   U.$('yardf').value = "";
   U.$('weightp').value = "";
   U.$('finaly').innerHTML = "";
+  U.$('message3').innerHTML = "";
 
   return false;
 } // end of clean3()
@@ -141,6 +181,7 @@ function clean4() {
   U.$('yardageshb').value = "";
   U.$('yardagesub').value = "";
   U.$('totalshb').innerHTML = "";
+  U.$('message4').innerHTML = "";
 
   return false;
 } // end of clean4()
