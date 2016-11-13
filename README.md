@@ -9,7 +9,7 @@ CSS is [Solarized CSS](https://thomasf.github.io/solarized-css/) by Thomas
 Frössman.
 
 ## Usage
-Give it a try: [stitchcounter](http://www.boccaperta.com/stitchcounter.html)
+Give it a try: [stitchcounter](https://manuel-uberti.github.io/stitchcounter/)
 
 ## License
 Copyright © 2015 Manuel Uberti
