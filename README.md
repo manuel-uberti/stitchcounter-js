@@ -5,9 +5,6 @@ in [CHICKEN Scheme](https://github.com/manuel-uberti/stitchcounter-scm),
 [Clojure](https://github.com/manuel-uberti/stitchcounter-clj) and
 [C](https://github.com/manuel-uberti/c-bag/blob/master/stitchcounter.c).
 
-CSS is [Solarized CSS](https://thomasf.github.io/solarized-css/) by Thomas
-Frössman.
-
 ## Usage
 Give it a try: [stitchcounter](https://manuel-uberti.github.io/stitchcounter/)
 
