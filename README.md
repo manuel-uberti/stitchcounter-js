@@ -1,12 +1,10 @@
 # stitchcounter-js
 
 Simple JavaScript implementation of stitchcounter, a tool I previously developed
-in [CHICKEN Scheme](https://github.com/manuel-uberti/stitchcounter-scm),
-[Clojure](https://github.com/manuel-uberti/stitchcounter-clj) and
-[C](https://github.com/manuel-uberti/c-bag/blob/master/stitchcounter.c).
+in [CHICKEN Scheme](https://github.com/manuel-uberti/stitchcounter-scm), [Clojure](https://github.com/manuel-uberti/stitchcounter-clj) and [C](https://github.com/manuel-uberti/c-bag/blob/master/stitchcounter.c).
 
 ## Usage
-Give it a try: [stitchcounter](https://manuel-uberti.github.io/stitchcounter/)
+Give it a try: [stitchcounter](https://www.manueluberti.eu/stitchcounter/)
 
 ## License
 Copyright © 2015 Manuel Uberti
